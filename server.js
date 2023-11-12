@@ -36,7 +36,7 @@ const secureMiddleware = (req, res, next) => {
 };
 
 // Routes
-app.use('/api/data',secureMiddleware, require('../routes/data'));
+app.use('/api/data',secureMiddleware, require('./routes/data'));
 
 // Serve a simple message on the root URL
 app.get('/', (req, res) => {
